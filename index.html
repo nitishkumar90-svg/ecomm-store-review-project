@@ -33,7 +33,7 @@
             <li><a href="#"><i class="fa-icon fas fa-shopping-basket"></i></a></li>
             <li><a href="#"><i class="fa-icon fas fa-bars"></i></a></li>
           </ul>
-          <nav aria-label="Primary" class="navigation">
+          <nav aria-label="Primary" class="navigation hidden">
             <ul class="menu">
               <li><input class="search-text" type="text" placeholder="Search..."><i
                   class="fas fa-search search-icon"></i></li>
@@ -54,9 +54,11 @@
 
   <main class="products">
     <header class="hero-header">
-      <header class="heading-header pad-left-3">
-        <h3>Final Sale for<br />Winters</h3>
-        <button class="btn-red">Show More</button>
+      <header class="container">
+        <header class="heading-header pad-left-3">
+          <h3>Final Sale for<br />Winters</h3>
+          <button class="btn-red">Show More</button>
+        </header>
       </header>
     </header>
 
@@ -68,8 +70,15 @@
             <h2 class="subheading text-left">Filters</h2>
 
             <div class="filter-options filter-options">
+              <fieldset class="">
+                <legend class="pad-top-10 font-bold">Flone Assured</legend>
+                <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+                </label>
+              </fieldset>
               <fieldset>
-                <legend class="pad-top-4 font-bold">Colour</legend>
+                <legend class="pad-top-10 font-bold">Colour</legend>
                 <ul class="filter-list ks-cboxtags">
                   <li><input type="checkbox" name="colour" value="black" id="black"> <label for="black">Black</label>
                   </li>
@@ -81,7 +90,7 @@
                 </ul>
               </fieldset>
               <fieldset>
-                <legend class="pad-top-4 font-bold">Sizes</legend>
+                <legend class="pad-top-10 font-bold">Sizes</legend>
                 <ul class="filter-list ks-cboxtags">
                   <li><input type="checkbox" name="size" value="XS" id="XS"> <label for="XS">XS</label></li>
                   <li><input type="checkbox" name="size" value="S" id="S"> <label for="S">S</label></li>
@@ -91,7 +100,7 @@
                 </ul>
               </fieldset>
               <fieldset>
-                <legend class="pad-top-4 font-bold">Ratings (above)</legend>
+                <legend class="pad-top-10 font-bold">Ratings (above)</legend>
                 <ol>
                   <li>
                     <input type="radio" name="rating" value="4" id="aboveFour">
@@ -126,10 +135,10 @@
                   </li>
                 </ol>
               </fieldset>
-              <fieldset class="text-center">
+              <fieldset class="text-center pad-top-10">
                 <button class="filter-button">Apply Filter(s)</button>
               </fieldset>
-              <fieldset class="text-center">
+              <fieldset class="text-center pad-top-4 pad-bot-4">
                 <button class="transparent-background font-normal"><u>Reset</u></button>
               </fieldset>
             </div>
@@ -314,9 +323,12 @@
             <nav aria-label="Pagination" class="pagination text-center">
               <p>Showing 4 of 11 products</p>
               <ol class="pages flex flex-gap">
+                <li class="disabled-page"><a href="javascript:void(0)" aria-label="Previous Page"><text>
+                      <</text></a></li>
                 <li class="active-page"><a href="#" aria-label="Current Page, Page 1" aria-current="true">1</a></li>
                 <li><a href="#" aria-label="Page 2">2</a></li>
                 <li><a href="#" aria-label="Page 3">3</a></li>
+                <li><a href="#" aria-label="Next Page"><text>></text></a></li>
               </ol>
             </nav>
           </section>
@@ -327,32 +339,20 @@
 
   <footer class="page-footer grey-background">
     <article class="container">
-      <article class="grid grid-2">
-        <fieldset>
-          <legend>
-            <h5>Links</h5>
-          </legend>
-          <nav aria-label="Legal">
-            <ul class="legal">
-              <li><a href="#">Terms of Use</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Accessibility Policy</a></li>
-            </ul>
-          </nav>
-        </fieldset>
-        <fieldset>
-          <legend>
-            <h5>Follow Us On</h5>
-          </legend>
-          <ul class="social flex">
-            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-          </ul>
-        </fieldset>
-      </article>
-      <p class="copyright text-center">Flone. &copy; Copyright, 2020.</p>
+      <ul class="social flex">
+        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      </ul>
+      <nav aria-label="Legal">
+        <ul class="legal flex">
+          <li><a href="#">Terms</a></li><span> | </span>
+          <li><a href="#">Privacy</a></li><text> | </text>
+          <li><a href="#">Accessibility</a></li>
+        </ul>
+      </nav>
     </article>
+    <p class="copyright text-center">Flone. &copy; Copyright, 2020.</p>
   </footer>
 </body>
 
