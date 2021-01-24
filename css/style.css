@@ -1,1 +1,267 @@
 /* Note there a few "reset" styles given in reset.css. Review those before you begin */
+
+.page-header {
+  height: 3em;
+}
+
+.page-header .icons ul li {
+  padding: 0.4em 0.5em;
+}
+
+.page-header .icons ul li .fa-icon {
+  font-size: 1.2em;
+}
+
+.page-header .logo img {
+  height: 3em;
+}
+
+.hero-header {
+  background: url(../img/hero-image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 15em;
+}
+
+.pad-left-3 {
+  padding-left: 0.3em;
+}
+
+.heading-header {
+  padding-top: 2em;
+}
+
+.border-box {
+  background-color: transparent;
+  border: 0.05em solid var(--secondary-color);
+  border-radius: 10em;
+  height: 2em;
+  width: 2em;
+}
+
+.active-box, .border-box:hover {
+  background-color: var(--secondary-color);
+  color: #ffffff;
+}
+
+.cart-button {
+  background-color: white;
+  border: 1px solid #cccccc;
+  padding: 0.4em;
+  border-radius: 0.4em;
+}
+
+.cart-button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.product-footer {
+  padding: 1em 0;
+  text-align: center;
+}
+
+.grey-background {
+  background-color: #f1efef
+}
+
+.pad-top-4 {
+  padding-top: 0.4em;
+}
+
+.font-bold {
+  font-weight: 600;
+}
+
+del {
+  color: red;
+}
+
+.page-footer h5 {
+  margin-bottom: 0.1em;
+}
+
+.pages li {
+  padding: 0.1em;
+  width: 2em;
+  border: 1px solid black;
+  border-radius: 5em;
+  margin: 0 0.4em;
+  margin-bottom: 1em;
+}
+
+.pages li.active-page {
+  background-color: var(--secondary-color);
+}
+
+.pages li.active-page a {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.search-text {
+  border: 0;
+  border-bottom: 1px solid var(--secondary-color);
+  width: 85%;
+  padding-right: 1.7em;
+}
+
+.menu, .submenu {
+  text-align: left;
+}
+
+.border-bottom {
+  border-bottom: 0.1em solid #cccccc;
+}
+
+.shop-arrow {
+  font-size: 0.5em;
+  position: relative;
+  bottom: 0.2em;
+  padding-left: 0.5em;
+}
+
+.search-icon {
+  position: relative;
+  right: 1em;
+}
+
+.disabled {
+  cursor: text;
+  color: #f1efef;
+}
+
+.filter-button {
+  padding: 0.6em;
+  border-radius: 0;
+  background-color: black;
+  color: white;
+  margin: 0.6em 0;
+}
+
+.clear-both {
+  clear: both;
+  width: 100%;
+}
+
+.font-normal {
+  font-weight: 300;
+}
+
+.filter-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.filter-options {
+  padding: 0.4em;
+  border: 0.1em solid #d2d2d2;
+}
+
+.social li {
+  padding: 0 0.5em;
+}
+
+.extra-content {
+  color: red;
+}
+
+.radio-group input[type=radio] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+
+.radio-group label {
+  color: #332f35;
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px 15px;
+}
+
+.radio-group input[type=radio]:checked+label {
+  color: red;
+  font-weight: bold;
+}
+
+.radio-group label+input[type=radio]+label {
+  border-left: solid 3px #d8d8d8;
+}
+
+.radio-group {
+  border: solid 3px #d8d8d8;
+  display: inline-block;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+ul.ks-cboxtags {
+  list-style: none;
+}
+
+ul.ks-cboxtags li {
+  display: inline;
+}
+
+ul.ks-cboxtags li label {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, .9);
+  border: 2px solid #d8d8d8;
+  color: var(--secondary-color);
+  border-radius: 25px;
+  white-space: nowrap;
+  margin: 3px 0px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: all .2s;
+}
+
+ul.ks-cboxtags li label {
+  padding: 1px 12px;
+  cursor: pointer;
+}
+
+ul.ks-cboxtags li label::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 12px;
+  padding: 2px 6px 2px 2px;
+  content: "\f067";
+  transition: transform .3s ease-in-out;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked+label::before {
+  content: "\f00c";
+  transform: rotate(-360deg);
+  transition: transform .3s ease-in-out;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked+label {
+  border: 2px solid var(--secondary-color);
+  background-color: var(--secondary-color);
+  color: #fff;
+  transition: all .2s;
+}
+
+ul.ks-cboxtags li input[type="checkbox"] {
+  display: absolute;
+}
+
+ul.ks-cboxtags li input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:focus+label {
+  border: 2px solid var(--secondary-color);
+}

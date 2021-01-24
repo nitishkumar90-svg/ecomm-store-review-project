@@ -1,13 +1,31 @@
+:root {
+	--pad-and-gap: 1em;
+	--secondary-color: #000000;
+}
+
 *, *::before, *::after {
 	box-sizing: inherit;
 }
 
 html {
 	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
 }
 
 body {
 	margin: 0;
+	padding-bottom: 0;
+}
+
+p, span, a {
+	color: var(--secondary-color);
+	text-decoration: none;
+}
+
+.container {
+	max-width: 1300px;
+	width: 95%;
+	margin: 0 auto;
 }
 
 /* Preview each of these suggested resets before beginning your project styling */
@@ -86,4 +104,83 @@ legend.legend {
 	border-style: none;
 	border-color: initial;
 	border-image: initial;
+}
+
+.color-red {
+	color: red;
+}
+
+.hidden {
+	display: none;
+}
+
+.btn-red {
+	background-color: red;
+	color: white;
+	border: 0.3em solid red;
+}
+
+.grid {
+	display: grid;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-gap {
+	justify-content: center;
+}
+
+.grid-2 {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-1 {
+	grid-template-columns: repeat(1, 1fr);
+}
+
+.grid-desktop {
+	grid-template-columns: repeat(3, 1fr);    
+}
+
+.text-left {
+	text-align: left;
+	justify-content: start;
+}
+
+.text-center {
+	text-align: center;
+	justify-content: space-around;
+}
+
+.text-right {
+	text-align: right;
+	justify-content: flex-end;
+}
+
+.flex-even {
+	justify-content: space-evenly;
+}
+
+.navigation {
+	background-color: #ffffff;
+	z-index: 2;
+}
+
+.submenu {
+	padding-left: 0;
+}
+
+.float-right {
+	float: right;
+}
+
+.transparent-background {
+	background: transparent;
+	border: none;
+}
+
+.fa-star, .fa-star-half-alt {
+	color: red;
 }
