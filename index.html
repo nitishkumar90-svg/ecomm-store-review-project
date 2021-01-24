@@ -4,14 +4,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flone. | Online Shopping Site for Fashion & Lifestyle. Buy Shoes, Clothing, Accessories and lifestyle products for women & men.</title>
+  <title>Flone. | Online Shopping Site for Fashion & Lifestyle. Buy Shoes, Clothing, Accessories and lifestyle products
+    for women & men.</title>
   <meta name="description"
     content="Online Shopping Site for Fashion & Lifestyle. Buy Shoes, Clothing, Accessories and lifestyle products for women & men.">
   <meta name="author" content="Nitish Kumar">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
-  <link rel="shortcut icon" type="image/png" href="./img/logo.png"/>
+  <link rel="shortcut icon" type="image/png" href="./img/logo.png" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -34,7 +35,8 @@
           </ul>
           <nav aria-label="Primary" class="navigation">
             <ul class="menu">
-              <li><input class="search-text" type="text" placeholder="Search..."><i class="fas fa-search search-icon"></i></li>
+              <li><input class="search-text" type="text" placeholder="Search..."><i
+                  class="fas fa-search search-icon"></i></li>
               <li><a class="font-bold" href="#">Shop<i class="fas fa-chevron-down shop-arrow"></i></a>
                 <ul class="submenu">
                   <li><a href="#">Top Wear</a></li>
@@ -58,256 +60,268 @@
       </header>
     </header>
 
-    <article class="grid grid-1">
-      <!-- Filtering product form -->
-      <form class="filters container pad-top-4">
-        <label>Filters</label><i class="fas fa-plus"></i>
+    <article class="">
+      <article class="container">
+        <article class="grid grid-1 grid-webview">
+          <!-- Filtering product form -->
+          <form class="filters container">
+            <h2 class="subheading text-left">Filters</h2>
 
-        <div class="filter-options filter-options">
-          <fieldset>
-            <legend class="pad-top-4 font-bold">Colour</legend>
-            <ul class="filter-list ks-cboxtags">
-              <li><input type="checkbox" name="colour" value="black" id="black"> <label for="black">Black</label></li>
-              <li><input type="checkbox" name="colour" value="white" id="white"> <label for="white">White</label></li>
-              <li><input type="checkbox" name="colour" value="grey" id="grey"> <label for="grey">Grey</label></li>
-              <li><input type="checkbox" name="colour" value="red" id="red"> <label for="red">Red</label></li>
-              <li><input type="checkbox" name="colour" value="blue" id="blue"> <label for="blue">Blue</label></li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend class="pad-top-4 font-bold">Sizes</legend>
-            <ul class="filter-list ks-cboxtags">
-              <li><input type="checkbox" name="size" value="XS" id="XS"> <label for="XS">XS</label></li>
-              <li><input type="checkbox" name="size" value="S" id="S"> <label for="S">S</label></li>
-              <li><input type="checkbox" name="size" value="M" id="M"> <label for="M">M</label></li>
-              <li><input type="checkbox" name="size" value="L" id="L"> <label for="L">L</label></li>
-              <li><input type="checkbox" name="size" value="XL" id="XL"> <label for="XL">XL</label></li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend class="pad-top-4 font-bold">Ratings (above)</legend>
-            <ol>
-              <li>
-                <input type="radio" name="rating" value="4" id="aboveFour">
-                <label for="aboveFour">
+            <div class="filter-options filter-options">
+              <fieldset>
+                <legend class="pad-top-4 font-bold">Colour</legend>
+                <ul class="filter-list ks-cboxtags">
+                  <li><input type="checkbox" name="colour" value="black" id="black"> <label for="black">Black</label>
+                  </li>
+                  <li><input type="checkbox" name="colour" value="white" id="white"> <label for="white">White</label>
+                  </li>
+                  <li><input type="checkbox" name="colour" value="grey" id="grey"> <label for="grey">Grey</label></li>
+                  <li><input type="checkbox" name="colour" value="red" id="red"> <label for="red">Red</label></li>
+                  <li><input type="checkbox" name="colour" value="blue" id="blue"> <label for="blue">Blue</label></li>
+                </ul>
+              </fieldset>
+              <fieldset>
+                <legend class="pad-top-4 font-bold">Sizes</legend>
+                <ul class="filter-list ks-cboxtags">
+                  <li><input type="checkbox" name="size" value="XS" id="XS"> <label for="XS">XS</label></li>
+                  <li><input type="checkbox" name="size" value="S" id="S"> <label for="S">S</label></li>
+                  <li><input type="checkbox" name="size" value="M" id="M"> <label for="M">M</label></li>
+                  <li><input type="checkbox" name="size" value="L" id="L"> <label for="L">L</label></li>
+                  <li><input type="checkbox" name="size" value="XL" id="XL"> <label for="XL">XL</label></li>
+                </ul>
+              </fieldset>
+              <fieldset>
+                <legend class="pad-top-4 font-bold">Ratings (above)</legend>
+                <ol>
+                  <li>
+                    <input type="radio" name="rating" value="4" id="aboveFour">
+                    <label for="aboveFour">
 
-                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                    class="fas fa-star"></i><i class="far fa-star"></i>
-                </label>
-              </li>
-              <li>
-                <input type="radio" name="rating" value="3" id="aboveThree">
-                <label for="aboveThree">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="far fa-star"></i>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="rating" value="3" id="aboveThree">
+                    <label for="aboveThree">
 
-                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                    class="far fa-star"></i><i class="far fa-star"></i>
-                </label>
-              </li>
-              <li>
-                <input type="radio" name="rating" value="2" id="aboveTwo">
-                <label for="aboveTwo">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="far fa-star"></i><i class="far fa-star"></i>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="rating" value="2" id="aboveTwo">
+                    <label for="aboveTwo">
 
-                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i
-                    class="far fa-star"></i><i class="far fa-star"></i>
-                </label>
-              </li>
-              <li>
-                <input type="radio" name="rating" value="1" id="aboveOne">
-                <label for="aboveOne">
-                  <i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
-                    class="far fa-star"></i><i class="far fa-star"></i>
-                </label>
-              </li>
-            </ol>
-          </fieldset>
-          <fieldset class="text-center">
-            <button class="filter-button">Apply Filter(s)</button>
-          </fieldset>
-          <fieldset class="text-center">
-            <button class="transparent-background font-normal"><u>Reset</u></button>
-          </fieldset>
-        </div>
-      </form>
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i
+                        class="far fa-star"></i><i class="far fa-star"></i>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="rating" value="1" id="aboveOne">
+                    <label for="aboveOne">
+                      <i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                        class="far fa-star"></i><i class="far fa-star"></i>
+                    </label>
+                  </li>
+                </ol>
+              </fieldset>
+              <fieldset class="text-center">
+                <button class="filter-button">Apply Filter(s)</button>
+              </fieldset>
+              <fieldset class="text-center">
+                <button class="transparent-background font-normal"><u>Reset</u></button>
+              </fieldset>
+            </div>
+          </form>
 
-      <section class="results container">
-        <article class="grid grid-2">
-          <h2 class="subheading text-left">Top Wear</h2>
-          <h2 class="text-right">
-            <a href="#" title="Sort - Price By Lowest To Highest"><i class="fas fa-sort-amount-up-alt"></i></a>
-            <a href="#" title="Sort - Price By Highest To Lowest"><i class="fas fa-sort-amount-down-alt"></i></a>
-          </h2>
+          <section class="full-product-view grid-webview-product-section">
+            <section class="results container">
+              <article class="grid grid-2">
+                <h2 class="subheading text-left">Top Wear</h2>
+                <h2 class="text-right">
+                  <a href="#" title="Sort - Price By Lowest To Highest"><i class="fas fa-sort-amount-up-alt"></i></a>
+                  <a href="#" title="Sort - Price By Highest To Lowest"><i class="fas fa-sort-amount-down-alt"></i></a>
+                </h2>
+              </article>
+              <header class="grid grid-1 grid-webview-products">
+                <!-- Product 1 -->
+                <article class="product">
+                  <header>
+                    <img src="./img/Products/2.jpg" alt="Product Image">
+                    <h3>Blue Jacket<span class="float-right"><i class="far fa-heart"></i></span></h3>
+                    <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci dolorem voluptates blanditiis
+                      repellat
+                      totam aut repellendus maiores laudantium, facilis pariat <a class="extra-content" href="#">see
+                        more...</a></p>
+
+                    <dl>
+                      <dt class="font-bold">Rating</dt>
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </dl>
+
+                  </header>
+                  <form>
+                    <fieldset>
+                      <legend class="pad-top-4 font-bold">Colours</legend>
+                      <ul>
+                        <li><label><input type="radio" checked name="colour" value="r"> Red</label></li>
+                        <li><label><input type="radio" name="colour" value="w"> White</label></li>
+                        <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
+                      </ul>
+                    </fieldset>
+                    <fieldset>
+                      <legend class="pad-top-4 font-bold">Select Size</legend>
+                      <article>
+                        <button class="border-box active-box">M</button>
+                        <button class="border-box">L</button>
+                        <button class="border-box">XL</button>
+                      </article>
+                    </fieldset>
+                  </form>
+                  <footer class="product-footer">
+                    <button class="cart-button" type="button"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                  </footer>
+                </article>
+
+                <!-- Product 2 -->
+                <article class="product">
+                  <header>
+                    <img src="./img/Products/3.jpg" alt="Product Image">
+                    <h3>Blue Jacket<span class="float-right"><i class="far fa-heart"></i></span></h3>
+                    <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci dolorem voluptates blanditiis
+                      repellat
+                      totam aut repellendus maiores laudantium, facilis pariat <a href="#" class="extra-content">see
+                        more...</a></p>
+
+                    <dl>
+                      <dt class="font-bold">Rating</dt>
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </dl>
+
+                  </header>
+                  <form>
+                    <fieldset>
+                      <legend class="pad-top-4 font-bold">Colours</legend>
+                      <ul>
+                        <li><label><input type="radio" checked name="colour" value="r"> Red</label></li>
+                        <li><label><input type="radio" name="colour" value="w"> White</label></li>
+                        <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
+                      </ul>
+                    </fieldset>
+                    <fieldset>
+                      <legend class="pad-top-4 font-bold">Select Size</legend>
+                      <article>
+                        <button class="border-box active-box">M</button>
+                        <button class="border-box">L</button>
+                        <button class="border-box">XL</button>
+                      </article>
+                    </fieldset>
+                  </form>
+                  <footer class="product-footer">
+                    <button class="cart-button" type="button"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                  </footer>
+                </article>
+
+                <!-- Product 3 -->
+                <article class="product">
+                  <header>
+                    <img src="./img/Products/5.jpg" alt="Product Image">
+                    <h3>Blue Jacket<span class="float-right"><i class="far fa-heart"></i></span></h3>
+                    <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci dolorem voluptates blanditiis
+                      repellat
+                      totam aut repellendus maiores laudantium, facilis pariat <a href="#" class="extra-content">see
+                        more...</a></p>
+
+                    <dl>
+                      <dt class="font-bold">Rating</dt>
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </dl>
+
+                  </header>
+                  <form>
+                    <fieldset>
+                      <legend class="pad-top-4 font-bold">Colours</legend>
+                      <ul>
+                        <li><label><input type="radio" checked name="colour" value="r"> Red</label></li>
+                        <li><label><input type="radio" name="colour" value="w"> White</label></li>
+                        <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
+                      </ul>
+                    </fieldset>
+                    <fieldset>
+                      <legend class="pad-top-4 font-bold">Select Size</legend>
+                      <article>
+                        <button class="border-box active-box">M</button>
+                        <button class="border-box">L</button>
+                        <button class="border-box">XL</button>
+                      </article>
+                    </fieldset>
+                  </form>
+                  <footer class="product-footer">
+                    <button class="cart-button" type="button"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                  </footer>
+                </article>
+
+                <!-- Product 4 -->
+                <article class="product">
+                  <header>
+                    <img src="./img/Products/7.jpg" alt="Product Image">
+                    <h3>Blue Jacket<span class="float-right"><i class="far fa-heart"></i></span></h3>
+                    <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci dolorem voluptates blanditiis
+                      repellat
+                      totam aut repellendus maiores laudantium, facilis pariat <a href="#" class="extra-content">see
+                        more...</a></p>
+
+                    <dl>
+                      <dt class="font-bold">Rating</dt>
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </dl>
+
+                  </header>
+                  <form>
+                    <fieldset>
+                      <legend class="pad-top-4 font-bold">Colours</legend>
+                      <ul>
+                        <li><label><input type="radio" checked name="colour" value="r"> Red</label></li>
+                        <li><label><input type="radio" name="colour" value="w"> White</label></li>
+                        <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
+                      </ul>
+                    </fieldset>
+                    <fieldset>
+                      <legend class="pad-top-4 font-bold">Select Size</legend>
+                      <article>
+                        <button class="border-box active-box">M</button>
+                        <button class="border-box">L</button>
+                        <button class="border-box">XL</button>
+                      </article>
+                    </fieldset>
+                  </form>
+                  <footer class="product-footer">
+                    <button class="cart-button" type="button"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                  </footer>
+                </article>
+              </header>
+            </section>
+
+            <nav aria-label="Pagination" class="pagination text-center">
+              <p>Showing 4 of 11 products</p>
+              <ol class="pages flex flex-gap">
+                <li class="active-page"><a href="#" aria-label="Current Page, Page 1" aria-current="true">1</a></li>
+                <li><a href="#" aria-label="Page 2">2</a></li>
+                <li><a href="#" aria-label="Page 3">3</a></li>
+              </ol>
+            </nav>
+          </section>
         </article>
-        <header class="grid grid-1">
-          <!-- Product 1 -->
-          <article class="product">
-            <header>
-              <img src="./img/Products/2.jpg" alt="Product Image">
-              <h3>Blue Jacket<span class="float-right"><i class="far fa-heart"></i></span></h3>
-              <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci dolorem voluptates blanditiis
-                repellat
-                totam aut repellendus maiores laudantium, facilis pariat <a class="extra-content" href="#">see more...</a></p>
-
-              <dl>
-                <dt class="font-bold">Rating</dt>
-                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                  class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-              </dl>
-
-            </header>
-            <form>
-              <fieldset>
-                <legend class="pad-top-4 font-bold">Colours</legend>
-                <ul>
-                  <li><label><input type="radio" checked name="colour" value="r"> Red</label></li>
-                  <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                  <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-                </ul>
-              </fieldset>
-              <fieldset>
-                <legend class="pad-top-4 font-bold">Select Size</legend>
-                <article>
-                  <button class="border-box active-box">M</button>
-                  <button class="border-box">L</button>
-                  <button class="border-box">XL</button>
-                </article>
-              </fieldset>
-            </form>
-            <footer class="product-footer">
-              <button class="cart-button" type="button"><i class="fas fa-cart-plus"></i> Add to Cart</button>
-            </footer>
-          </article>
-
-          <!-- Product 2 -->
-          <article class="product">
-            <header>
-              <img src="./img/Products/3.jpg" alt="Product Image">
-              <h3>Blue Jacket<span class="float-right"><i class="far fa-heart"></i></span></h3>
-              <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci dolorem voluptates blanditiis
-                repellat
-                totam aut repellendus maiores laudantium, facilis pariat <a href="#" class="extra-content">see more...</a></p>
-
-              <dl>
-                <dt class="font-bold">Rating</dt>
-                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                  class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-              </dl>
-
-            </header>
-            <form>
-              <fieldset>
-                <legend class="pad-top-4 font-bold">Colours</legend>
-                <ul>
-                  <li><label><input type="radio" checked name="colour" value="r"> Red</label></li>
-                  <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                  <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-                </ul>
-              </fieldset>
-              <fieldset>
-                <legend class="pad-top-4 font-bold">Select Size</legend>
-                <article>
-                  <button class="border-box active-box">M</button>
-                  <button class="border-box">L</button>
-                  <button class="border-box">XL</button>
-                </article>
-              </fieldset>
-            </form>
-            <footer class="product-footer">
-              <button class="cart-button" type="button"><i class="fas fa-cart-plus"></i> Add to Cart</button>
-            </footer>
-          </article>
-
-          <!-- Product 3 -->
-          <article class="product">
-            <header>
-              <img src="./img/Products/5.jpg" alt="Product Image">
-              <h3>Blue Jacket<span class="float-right"><i class="far fa-heart"></i></span></h3>
-              <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci dolorem voluptates blanditiis
-                repellat
-                totam aut repellendus maiores laudantium, facilis pariat <a href="#" class="extra-content">see more...</a></p>
-
-              <dl>
-                <dt class="font-bold">Rating</dt>
-                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                  class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-              </dl>
-
-            </header>
-            <form>
-              <fieldset>
-                <legend class="pad-top-4 font-bold">Colours</legend>
-                <ul>
-                  <li><label><input type="radio" checked name="colour" value="r"> Red</label></li>
-                  <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                  <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-                </ul>
-              </fieldset>
-              <fieldset>
-                <legend class="pad-top-4 font-bold">Select Size</legend>
-                <article>
-                  <button class="border-box active-box">M</button>
-                  <button class="border-box">L</button>
-                  <button class="border-box">XL</button>
-                </article>
-              </fieldset>
-            </form>
-            <footer class="product-footer">
-              <button class="cart-button" type="button"><i class="fas fa-cart-plus"></i> Add to Cart</button>
-            </footer>
-          </article>
-
-          <!-- Product 4 -->
-          <article class="product">
-            <header>
-              <img src="./img/Products/7.jpg" alt="Product Image">
-              <h3>Blue Jacket<span class="float-right"><i class="far fa-heart"></i></span></h3>
-              <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci dolorem voluptates blanditiis
-                repellat
-                totam aut repellendus maiores laudantium, facilis pariat <a href="#" class="extra-content">see more...</a></p>
-
-              <dl>
-                <dt class="font-bold">Rating</dt>
-                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                  class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-              </dl>
-
-            </header>
-            <form>
-              <fieldset>
-                <legend class="pad-top-4 font-bold">Colours</legend>
-                <ul>
-                  <li><label><input type="radio" checked name="colour" value="r"> Red</label></li>
-                  <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                  <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-                </ul>
-              </fieldset>
-              <fieldset>
-                <legend class="pad-top-4 font-bold">Select Size</legend>
-                <article>
-                  <button class="border-box active-box">M</button>
-                  <button class="border-box">L</button>
-                  <button class="border-box">XL</button>
-                </article>
-              </fieldset>
-            </form>
-            <footer class="product-footer">
-              <button class="cart-button" type="button"><i class="fas fa-cart-plus"></i> Add to Cart</button>
-            </footer>
-          </article>
-        </header>
-      </section>
-
-      <nav aria-label="Pagination" class="pagination text-center">
-        <p>Showing 4 of 11 products</p>
-        <ol class="pages flex flex-gap">
-          <li class="active-page"><a href="#" aria-label="Current Page, Page 1" aria-current="true">1</a></li>
-          <li><a href="#" aria-label="Page 2">2</a></li>
-          <li><a href="#" aria-label="Page 3">3</a></li>
-        </ol>
-      </nav>
+      </article>
     </article>
   </main>
 
@@ -341,4 +355,5 @@
     </article>
   </footer>
 </body>
+
 </html>

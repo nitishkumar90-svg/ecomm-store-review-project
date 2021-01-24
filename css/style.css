@@ -265,3 +265,71 @@ ul.ks-cboxtags li input[type="checkbox"] {
 ul.ks-cboxtags li input[type="checkbox"]:focus+label {
   border: 2px solid var(--secondary-color);
 }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  
+
+.grid-webview {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-webview-products {
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1em;
+}
+
+.grid-webview-product-section {  
+  grid-column: 2/ 5;
+}
+
+.hide-on-webview {
+  display: none;
+}
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+
+
+  .grid-webview {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .grid-webview-products {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1em;
+  }
+  
+  .grid-webview-product-section {  
+    grid-column: 2/ 5;
+  }
+  
+  .hide-on-webview {
+    display: none;
+  }
+  
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  
+
+.grid-webview {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-webview-products {
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1em;
+}
+
+.grid-webview-product-section {  
+  grid-column: 2/ 5;
+}
+
+.hide-on-webview {
+  display: none;
+}
+ }
