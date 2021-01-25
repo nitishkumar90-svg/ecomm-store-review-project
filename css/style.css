@@ -5,7 +5,7 @@
 }
 
 .page-header .icons ul li {
-  padding: 0.4em 0.5em;
+  padding: var(--pad-and-gap) 0.5em;
 }
 
 .page-header .icons ul li .fa-icon {
@@ -14,6 +14,15 @@
 
 .page-header .logo img {
   height: 3em;
+}
+
+.legal a {
+  font-size: 0.9em;
+}
+
+.submenu-webview {
+  background-color: white;
+  padding-top: var(--pad-and-gap);
 }
 
 .hero-header {
@@ -28,16 +37,22 @@
   padding-left: 0.3em;
 }
 
-.page-footer ul {
-  justify-items: center;
+.mar-top-10 {
+  margin-top: 1em;
 }
 
-.social {
+.pad-top-20 {
+  padding-top: 2em;
+}
+
+.page-footer {
+  padding-top: 0.6em;
+}
+
+.page-footer ul, .page-footer nav {
   justify-content: center;
-}
-
-.legal {
-  justify-content: space-evenly;
+  justify-items: legacy;
+  place-content: flex-end;
 }
 
 .heading-header {
@@ -45,8 +60,8 @@
 }
 
 .copyright {
-  background-color: var(--secondary-color);
-  color: white;
+  margin-top: 0;
+  padding-bottom: var(--pad-and-gap);
 }
 
 .border-box {
@@ -65,8 +80,8 @@
 .cart-button {
   background-color: white;
   border: 1px solid #cccccc;
-  padding: 0.4em;
-  border-radius: 0.4em;
+  padding: var(--pad-and-gap);
+  border-radius: var(--pad-and-gap);
   width: 100%;
 }
 
@@ -85,7 +100,7 @@
 }
 
 .pad-top-4 {
-  padding-top: 0.4em;
+  padding-top: var(--pad-and-gap);
 }
 
 .font-bold {
@@ -105,7 +120,7 @@ del {
   width: 2em;
   border: 1px solid black;
   border-radius: 5em;
-  margin: 0 0.4em;
+  margin: 0 var(--pad-and-gap);
   margin-bottom: 1em;
 }
 
@@ -173,7 +188,7 @@ del {
 }
 
 .filter-options {
-  padding: 0.4em;
+  padding: var(--pad-and-gap);
   border: 0.1em solid #d2d2d2;
 }
 
@@ -299,7 +314,7 @@ ul.ks-cboxtags li input[type="checkbox"]:focus+label {
 }
 
 .pad-bot-4 {
-  padding-bottom: 0.4em;
+  padding-bottom: var(--pad-and-gap);
 }
 
 

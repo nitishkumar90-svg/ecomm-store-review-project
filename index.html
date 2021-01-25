@@ -29,9 +29,19 @@
         <article class="text-right icons">
           <!-- Additional links -->
           <ul class="your-products flex text-right">
-            <li><a href="#"><i class="fa-icon far fa-heart"></i></a></li>
+            <li class="hidden show-on-webview"><a class="font-bold" href="#">Shop<i class="fas fa-chevron-down shop-arrow"></i></a>
+              <ul class="submenu submenu-webview hidden">
+                <li><a href="#">Top Wear</a></li>
+                <li><a href="#">Bottom Wear</a></li>
+              </ul>
+            </li>
+            <li class="hidden show-on-webview"><a class="font-bold" href="#">About</a></li>
+            <li class="hidden show-on-webview"><a class="font-bold" href="#">Contact</a></li>
+            <li class="hidden show-on-webview"><input class="search-text" type="text" placeholder="Search..."><i
+              class="fas fa-search search-icon"></i></li>
+            <li><a class="pad-left-10" href="#"><i class="fa-icon far fa-heart"></i></a></li>
             <li><a href="#"><i class="fa-icon fas fa-shopping-basket"></i></a></li>
-            <li><a href="#"><i class="fa-icon fas fa-bars"></i></a></li>
+            <li class="hide-on-webview show-on-tablet"><a href="#"><i class="fa-icon fas fa-bars"></i></a></li>
           </ul>
           <nav aria-label="Primary" class="navigation hidden">
             <ul class="menu">
@@ -57,7 +67,7 @@
       <header class="container">
         <header class="heading-header pad-left-3">
           <h3>Final Sale for<br />Winters</h3>
-          <button class="btn-red">Show More</button>
+          <button class="btn-red mar-top-10">Show More</button>
         </header>
       </header>
     </header>
@@ -346,13 +356,13 @@
       </ul>
       <nav aria-label="Legal">
         <ul class="legal flex">
-          <li><a href="#">Terms</a></li><span> | </span>
-          <li><a href="#">Privacy</a></li><text> | </text>
-          <li><a href="#">Accessibility</a></li>
+          <li><a href="#">Terms of Use</a></li><span>&nbsp;|&nbsp;</span>
+          <li><a href="#">Privacy Policy</a></li><span>&nbsp;|&nbsp;</span>
+          <li><a href="#">Accessibility Policy</a></li>
         </ul>
       </nav>
+      <p class="copyright text-right"><strong>Flone.</strong> &copy; Copyright, 2021.</p>
     </article>
-    <p class="copyright text-center">Flone. &copy; Copyright, 2020.</p>
   </footer>
 </body>
 

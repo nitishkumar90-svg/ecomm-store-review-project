@@ -1,26 +1,29 @@
 :root {
-	--pad-and-gap: 1em;
+	--pad-and-gap: 0.4em;
 	--secondary-color: #000000;
 }
 
 *, *::before, *::after {
-	box-sizing: inherit;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 html {
-	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
 }
 
 body {
-	margin: 0;
-	padding-bottom: 0;
 	line-height: 1.5;
 }
 
 p, span, a {
 	color: var(--secondary-color);
 	text-decoration: none;
+}
+
+.hidden {
+	display: none;
 }
 
 .container {
@@ -111,10 +114,6 @@ legend.legend {
 	color: red;
 }
 
-.hidden {
-	display: none;
-}
-
 .btn-red {
 	background-color: red;
 	color: white;
@@ -142,7 +141,7 @@ legend.legend {
 }
 
 .grid-desktop {
-	grid-template-columns: repeat(3, 1fr);    
+	grid-template-columns: repeat(3, 1fr);
 }
 
 .text-left {
