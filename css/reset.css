@@ -120,6 +120,10 @@ legend.legend {
 	border: 0.3em solid red;
 }
 
+.subheading {
+
+}
+
 .grid {
 	display: grid;
 }
@@ -133,15 +137,15 @@ legend.legend {
 }
 
 .grid-2 {
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(2, auto);
 }
 
 .grid-1 {
-	grid-template-columns: repeat(1, 1fr);
+	grid-template-columns: repeat(1, auto);
 }
 
 .grid-desktop {
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(3, auto);
 }
 
 .text-left {
@@ -163,9 +167,21 @@ legend.legend {
 	justify-content: space-evenly;
 }
 
+.hidden-on-mobile-view {
+	display: none;
+}
+
 .navigation {
 	background-color: #ffffff;
-	z-index: 2;
+    z-index: 2;
+    position: relative;
+    padding: var(--pad-and-gap) 0;
+    border: 0.1em solid #c2c2c2;
+    margin-top: 0.3em;
+}
+
+.pad-3 {
+  padding: var(--pad-and-gap) 0;
 }
 
 .submenu {

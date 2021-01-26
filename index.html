@@ -29,21 +29,22 @@
         <article class="text-right icons">
           <!-- Additional links -->
           <ul class="your-products flex text-right">
-            <li class="hidden show-on-webview"><a class="font-bold" href="#">Shop<i class="fas fa-chevron-down shop-arrow"></i></a>
-              <ul class="submenu submenu-webview hidden">
+            <li class="hidden-on-mobile-view show-on-webview"><a class="font-bold" id="shop-submenu" href="#">Shop<i
+                  class="fas fa-chevron-down shop-arrow"></i></a>
+              <ul class="hidden submenu shop-submenu-options" id="shop-submenu-options">
                 <li><a href="#">Top Wear</a></li>
                 <li><a href="#">Bottom Wear</a></li>
               </ul>
             </li>
-            <li class="hidden show-on-webview"><a class="font-bold" href="#">About</a></li>
-            <li class="hidden show-on-webview"><a class="font-bold" href="#">Contact</a></li>
-            <li class="hidden show-on-webview"><input class="search-text" type="text" placeholder="Search..."><i
-              class="fas fa-search search-icon"></i></li>
+            <li class="hidden-on-mobile-view show-on-webview"><a class="font-bold" href="#">About</a></li>
+            <li class="hidden-on-mobile-view show-on-webview"><a class="font-bold" href="#">Contact</a></li>
+            <li class="hidden-on-mobile-view show-on-webview"><input class="search-text" type="text"
+                placeholder="Search..."><i class="fas fa-search search-icon"></i></li>
             <li><a class="pad-left-10" href="#"><i class="fa-icon far fa-heart"></i></a></li>
             <li><a href="#"><i class="fa-icon fas fa-shopping-basket"></i></a></li>
-            <li class="hide-on-webview show-on-tablet"><a href="#"><i class="fa-icon fas fa-bars"></i></a></li>
+            <li class="hide-on-webview show-on-tablet"><a id="nav-icon" href="#"><i class="fa-icon fas fa-bars"></i></a></li>
           </ul>
-          <nav aria-label="Primary" class="navigation hidden">
+          <nav aria-label="Primary" id="nav-options" class="navigation hidden">
             <ul class="menu">
               <li><input class="search-text" type="text" placeholder="Search..."><i
                   class="fas fa-search search-icon"></i></li>
@@ -77,9 +78,10 @@
         <article class="grid grid-1 grid-webview">
           <!-- Filtering product form -->
           <form class="filters container">
-            <h2 class="subheading text-left">Filters</h2>
+            <h2 class="subheading text-left pad-3">Filters<a class="hide-on-webview" href="javascript:void(0)" id="toggle-filter"><i
+                  class="fas fa-star"></i></a></h2>
 
-            <div class="filter-options filter-options">
+            <div id="filter-options" class="filter-options hidden-on-mobile-view">
               <fieldset class="">
                 <legend class="pad-top-10 font-bold">Flone Assured</legend>
                 <label class="switch">
@@ -157,25 +159,31 @@
           <section class="full-product-view grid-webview-product-section">
             <section class="results container">
               <article class="grid grid-2">
-                <h2 class="subheading text-left">Top Wear</h2>
-                <h2 class="text-right">
-                  <a href="#" title="Sort - Price By Lowest To Highest"><i class="fas fa-sort-amount-up-alt"></i></a>
-                  <a href="#" title="Sort - Price By Highest To Lowest"><i class="fas fa-sort-amount-down-alt"></i></a>
-                </h2>
+                <h2 class="subheading text-left  pad-3">Top Wear</h2>
+                <article class="text-right">
+                  <select class="width-100 sort-by">
+                    <option value="">Sort By</option>
+                    <option value="">Popularity</option>
+                    <option value="">Newest First</option>
+                    <option value="">Relevance</option>
+                    <option value="">Price - Low To High</option>
+                    <option value="">Price - High To Low</option>
+                  </select>
+                </article>
               </article>
               <header class="grid grid-1 grid-webview-products">
                 <!-- Product 1 -->
                 <article class="product">
                   <header>
                     <img src="./img/Products/2.jpg" alt="Product Image">
-                    <h3>Blue Jacket<span class="float-right"><i class="far fa-heart"></i></span></h3>
-                    <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci dolorem voluptates blanditiis
+                    <h3 class="pad-top-4">Blue Jacket<span class="float-right"><i class="far fa-heart"></i></span></h3>
+                    <data class="pad-top-4" value="39"><del>$50.00</del> <ins>$39.00</ins></data>
+                    <p class="pad-top-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci dolorem voluptates blanditiis
                       repellat
                       totam aut repellendus maiores laudantium, facilis pariat <a class="extra-content" href="#">see
                         more...</a></p>
 
-                    <dl>
+                    <dl class="pad-top-4">
                       <dt class="font-bold">Rating</dt>
                       <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                         class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
@@ -209,14 +217,14 @@
                 <article class="product">
                   <header>
                     <img src="./img/Products/3.jpg" alt="Product Image">
-                    <h3>Blue Jacket<span class="float-right"><i class="far fa-heart"></i></span></h3>
-                    <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci dolorem voluptates blanditiis
+                    <h3 class="pad-top-4">Brown Jacket<span class="float-right"><i class="far fa-heart"></i></span></h3>
+                    <data class="pad-top-4" value="39"><del>$50.00</del> <ins>$39.00</ins></data>
+                    <p class="pad-top-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci dolorem voluptates blanditiis
                       repellat
-                      totam aut repellendus maiores laudantium, facilis pariat <a href="#" class="extra-content">see
+                      totam aut repellendus maiores laudantium, facilis pariat <a class="extra-content" href="#">see
                         more...</a></p>
 
-                    <dl>
+                    <dl class="pad-top-4">
                       <dt class="font-bold">Rating</dt>
                       <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                         class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
@@ -250,14 +258,14 @@
                 <article class="product">
                   <header>
                     <img src="./img/Products/5.jpg" alt="Product Image">
-                    <h3>Blue Jacket<span class="float-right"><i class="far fa-heart"></i></span></h3>
-                    <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci dolorem voluptates blanditiis
+                    <h3 class="pad-top-4">Black Jacket<span class="float-right"><i class="far fa-heart"></i></span></h3>
+                    <data class="pad-top-4" value="39"><del>$50.00</del> <ins>$39.00</ins></data>
+                    <p class="pad-top-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci dolorem voluptates blanditiis
                       repellat
-                      totam aut repellendus maiores laudantium, facilis pariat <a href="#" class="extra-content">see
+                      totam aut repellendus maiores laudantium, facilis pariat <a class="extra-content" href="#">see
                         more...</a></p>
 
-                    <dl>
+                    <dl class="pad-top-4">
                       <dt class="font-bold">Rating</dt>
                       <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                         class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
@@ -291,14 +299,14 @@
                 <article class="product">
                   <header>
                     <img src="./img/Products/7.jpg" alt="Product Image">
-                    <h3>Blue Jacket<span class="float-right"><i class="far fa-heart"></i></span></h3>
-                    <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci dolorem voluptates blanditiis
+                    <h3 class="pad-top-4">Tan Jacket<span class="float-right"><i class="far fa-heart"></i></span></h3>
+                    <data class="pad-top-4" value="39"><del>$50.00</del> <ins>$39.00</ins></data>
+                    <p class="pad-top-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci dolorem voluptates blanditiis
                       repellat
-                      totam aut repellendus maiores laudantium, facilis pariat <a href="#" class="extra-content">see
+                      totam aut repellendus maiores laudantium, facilis pariat <a class="extra-content" href="#">see
                         more...</a></p>
 
-                    <dl>
+                    <dl class="pad-top-4">
                       <dt class="font-bold">Rating</dt>
                       <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                         class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
@@ -364,6 +372,7 @@
       <p class="copyright text-right"><strong>Flone.</strong> &copy; Copyright, 2021.</p>
     </article>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

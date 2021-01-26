@@ -26,11 +26,12 @@
 }
 
 .hero-header {
-  background: url(../img/hero-image.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 50vh;
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(255,255,255,0.1)) , url(../img/hero-image.jpg) center center;
+    background-size: cover;
+    position: relative;
+    justify-content: left;
+    text-align: left;
+    min-height: 50vh;
 }
 
 .pad-left-3 {
@@ -43,6 +44,24 @@
 
 .pad-top-20 {
   padding-top: 2em;
+}
+
+.width-100 {
+  width: 10em;
+}
+
+.sort-by {
+  background-color: white;
+  margin-top: 1.4em;
+}
+
+.shop-submenu-options {
+  z-index: 20;
+  position: relative;
+  background-color: white;
+  padding: var(--pad-and-gap) 0;
+  margin-top: var(--pad-and-gap);
+  border: 0.1em solid #d2d2d2;
 }
 
 .page-footer {
