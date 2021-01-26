@@ -21,7 +21,7 @@
 }
 
 .submenu-webview {
-  background-color: white;
+  background-color: var(--color-white);
   padding-top: var(--pad-and-gap);
 }
 
@@ -51,14 +51,14 @@
 }
 
 .sort-by {
-  background-color: white;
+  background-color: var(--color-white);
   margin-top: 1.4em;
 }
 
 .shop-submenu-options {
   z-index: 20;
   position: relative;
-  background-color: white;
+  background-color: var(--color-white);
   padding: var(--pad-and-gap) 0;
   margin-top: var(--pad-and-gap);
   border: 0.1em solid #d2d2d2;
@@ -93,11 +93,44 @@
 
 .active-box, .border-box:hover {
   background-color: var(--secondary-color);
-  color: #ffffff;
+  color: var(--color-white);
 }
 
+.color-variant-fields input,
+.size-fields input
+{
+  display: none;
+}
+
+.color-variant-fields li,
+.size-fields li
+{
+  display: inline;
+}
+
+
+.color-variant-fields label,
+.size-fields label
+{
+  background: var(--color-white);
+  color: black;
+  border: 0.1em solid var(--secondary-color);
+  cursor: pointer;
+  border-radius: 0.8em;
+  padding: 0.2em 0.4em;
+}
+
+ul.color-variant-fields li input[type=radio]:checked+label,
+ul.size-fields li input[type=radio]:checked+label
+{
+  background-color: var(--secondary-color);
+  color: var(--color-white);
+  transition: all .2s;
+}
+
+
 .cart-button {
-  background-color: white;
+  background-color: var(--color-white);
   border: 1px solid #cccccc;
   padding: var(--pad-and-gap);
   border-radius: var(--pad-and-gap);
@@ -105,8 +138,8 @@
 }
 
 .cart-button:hover {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: var(--secondary-color);
+  color: var(--color-white);
 }
 
 .product-footer {
@@ -127,7 +160,7 @@
 }
 
 del {
-  color: red;
+  color: var(--primary-color);
 }
 
 .page-footer h5 {
@@ -148,7 +181,7 @@ del {
 }
 
 .pages li.active-page a {
-  color: #ffffff;
+  color: var(--color-white);
   font-weight: bold;
 }
 
@@ -188,7 +221,7 @@ del {
   padding: 0.6em;
   border-radius: 0;
   background-color: black;
-  color: white;
+  color: var(--color-white);
   margin: 0.6em 0;
 }
 
@@ -202,7 +235,7 @@ del {
 }
 
 .filter-button:hover {
-  background-color: white;
+  background-color: var(--color-white);
   color: black;
 }
 
@@ -216,7 +249,7 @@ del {
 }
 
 .extra-content {
-  color: red;
+  color: var(--primary-color);
 }
 
 .radio-group input[type=radio] {
@@ -233,7 +266,7 @@ del {
 }
 
 .radio-group input[type=radio]:checked+label {
-  color: red;
+  color: var(--primary-color);
   font-weight: bold;
 }
 
@@ -246,6 +279,18 @@ del {
   display: inline-block;
   border-radius: 10px;
   overflow: hidden;
+}
+
+.verified-image {
+  height: 2em;
+}
+.verified-image-filter {
+  height: 1.5em;
+}
+
+.fa-foursquare {
+  color: red;
+  padding-right: var(--pad-and-gap);
 }
 
 ul.ks-cboxtags {
@@ -324,7 +369,7 @@ ul.ks-cboxtags li input[type="checkbox"]:focus+label {
 }
 
 .disabled-page a {
-  color: white;
+  color: var(--color-white);
   cursor: text;
 }
 
@@ -369,17 +414,17 @@ ul.ks-cboxtags li input[type="checkbox"]:focus+label {
   width: 1em;
   left: 4px;
   bottom: 4px;
-  background-color: white;
+  background-color: var(--color-white);
   -webkit-transition: .4s;
   transition: .4s;
 }
 
 input:checked + .slider {
-  background-color: red;
+  background-color: var(--primary-color);
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px red;
+  box-shadow: 0 0 1px var(--primary-color);
 }
 
 input:checked + .slider:before {

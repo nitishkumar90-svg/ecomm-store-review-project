@@ -65,12 +65,12 @@
 
   <main class="products">
     <header class="hero-header">
-      <header class="container">
-        <header class="heading-header pad-left-3">
+      <article class="container">
+        <article class="heading-header pad-left-3">
           <h3>Final Sale for<br />Winters</h3>
           <button class="btn-red mar-top-10">Show More</button>
-        </header>
-      </header>
+        </article>
+      </article>
     </header>
 
     <article class="">
@@ -78,16 +78,16 @@
         <article class="grid grid-1 grid-webview">
           <!-- Filtering product form -->
           <form class="filters container">
-            <h2 class="subheading text-left pad-3">Filters<a class="hide-on-webview" href="javascript:void(0)" id="toggle-filter"><i
-                  class="fas fa-star"></i></a></h2>
+            <h2 class="subheading text-left pad-3">Filters<a class="hide-on-webview" href="javascript:void(0)" id="toggle-filter"><i class="fas fa-filter"></i></a></h2>
 
-            <div id="filter-options" class="filter-options hidden-on-mobile-view">
+            <article id="filter-options" class="filter-options hidden-on-mobile-view">
               <fieldset class="">
                 <legend class="pad-top-10 font-bold">Flone Assured</legend>
                 <label class="switch">
                   <input type="checkbox">
                   <span class="slider round"></span>
                 </label>
+                <img src="./img/verified.png" class="verified-image-filter" alt="">
               </fieldset>
               <fieldset>
                 <legend class="pad-top-10 font-bold">Colour</legend>
@@ -153,11 +153,11 @@
               <fieldset class="text-center pad-top-4 pad-bot-4">
                 <button class="transparent-background font-normal"><u>Reset</u></button>
               </fieldset>
-            </div>
+            </article>
           </form>
 
           <section class="full-product-view grid-webview-product-section">
-            <section class="results container">
+            <article class="results container">
               <article class="grid grid-2">
                 <h2 class="subheading text-left  pad-3">Top Wear</h2>
                 <article class="text-right">
@@ -184,45 +184,8 @@
                         more...</a></p>
 
                     <dl class="pad-top-4">
-                      <dt class="font-bold">Rating</dt>
-                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                        class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                      <dt class="font-bold"><img title="Flone Assured" src="./img/verified.png" class="verified-image" alt=""></dt>
                     </dl>
-
-                  </header>
-                  <form>
-                    <fieldset>
-                      <legend class="pad-top-4 font-bold">Colours</legend>
-                      <ul>
-                        <li><label><input type="radio" checked name="colour" value="r"> Red</label></li>
-                        <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                        <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-                      </ul>
-                    </fieldset>
-                    <fieldset>
-                      <legend class="pad-top-4 font-bold">Select Size</legend>
-                      <article>
-                        <button class="border-box active-box">M</button>
-                        <button class="border-box">L</button>
-                        <button class="border-box">XL</button>
-                      </article>
-                    </fieldset>
-                  </form>
-                  <footer class="product-footer">
-                    <button class="cart-button" type="button"><i class="fas fa-cart-plus"></i> Add to Cart</button>
-                  </footer>
-                </article>
-
-                <!-- Product 2 -->
-                <article class="product">
-                  <header>
-                    <img src="./img/Products/3.jpg" alt="Product Image">
-                    <h3 class="pad-top-4">Brown Jacket<span class="float-right"><i class="far fa-heart"></i></span></h3>
-                    <data class="pad-top-4" value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-                    <p class="pad-top-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci dolorem voluptates blanditiis
-                      repellat
-                      totam aut repellendus maiores laudantium, facilis pariat <a class="extra-content" href="#">see
-                        more...</a></p>
 
                     <dl class="pad-top-4">
                       <dt class="font-bold">Rating</dt>
@@ -234,19 +197,64 @@
                   <form>
                     <fieldset>
                       <legend class="pad-top-4 font-bold">Colours</legend>
-                      <ul>
-                        <li><label><input type="radio" checked name="colour" value="r"> Red</label></li>
-                        <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                        <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
+                      <ul class="color-variant-fields pad-top-4">
+                        <li><input type="radio" checked name="colour" id="Red" value="Red"> <label for="Red">Red</label></li>
+                        <li><input type="radio" name="colour" id="White" value="White"> <label for="White">White</label></li>
+                        <li><input type="radio" name="colour" id="Blue" value="Blue"> <label for="Blue">Blue</label></li>
                       </ul>
                     </fieldset>
                     <fieldset>
                       <legend class="pad-top-4 font-bold">Select Size</legend>
-                      <article>
-                        <button class="border-box active-box">M</button>
-                        <button class="border-box">L</button>
-                        <button class="border-box">XL</button>
-                      </article>
+                      <ul class="size-fields pad-top-4">
+                        <li><input type="radio" checked name="size" id="Size_S_1" value="S"> <label for="Size_S_1">S</label></li>
+                        <li><input type="radio" name="size" id="Size_XL_1" value="XL"> <label for="Size_XL_1">XL</label></li>
+                        <li><input type="radio" name="size" id="Size_XXL_1" value="XXL"> <label for="Size_XXL_1">XXL</label></li>
+                      </ul>
+                    </fieldset>
+                  </form>
+                  <footer class="product-footer">
+                    <button class="cart-button" type="button"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                  </footer>
+                </article>
+
+                <!-- Product 2 -->
+                <article class="product">
+                  <header>
+                    <img src="./img/Products/3.jpg" alt="Product Image">
+                    <h3 class="pad-top-4">Brown Jacket<span class="float-right"><i class="fas fa-heart color-red"></i></span></h3>
+                    <data class="pad-top-4" value="39"><del>$50.00</del> <ins>$39.00</ins></data>
+                    <p class="pad-top-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci dolorem voluptates blanditiis
+                      repellat
+                      totam aut repellendus maiores laudantium, facilis pariat <a class="extra-content" href="#">see
+                        more...</a></p>
+
+                    <dl class="pad-top-4">
+                      <dt class="font-bold"><img title="Flone Assured" src="./img/verified.png" class="verified-image" alt=""></dt>
+                    </dl>
+
+                    <dl class="pad-top-4">
+                      <dt class="font-bold">Rating</dt>
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </dl>
+
+                  </header>
+                  <form>
+                    <fieldset>
+                      <legend class="pad-top-4 font-bold">Colours</legend>
+                      <ul class="color-variant-fields pad-top-4">
+                        <li><input type="radio" checked name="colour" id="Red_2" value="Red"> <label for="Red_2">Red</label></li>
+                        <li><input type="radio" name="colour" id="White_2" value="White"> <label for="White_2">White</label></li>
+                        <li><input type="radio" name="colour" id="Blue_2" value="Blue"> <label for="Blue_2">Blue</label></li>
+                      </ul>
+                    </fieldset>
+                    <fieldset>
+                      <legend class="pad-top-4 font-bold">Select Size</legend>
+                      <ul class="size-fields pad-top-4">
+                        <li><input type="radio" checked name="size" id="Size_S" value="S"> <label for="Size_S">S</label></li>
+                        <li><input type="radio" name="size" id="Size_XL" value="XL"> <label for="Size_XL">XL</label></li>
+                        <li><input type="radio" name="size" id="Size_XXL" value="XXL"> <label for="Size_XXL">XXL</label></li>
+                      </ul>
                     </fieldset>
                   </form>
                   <footer class="product-footer">
@@ -275,19 +283,19 @@
                   <form>
                     <fieldset>
                       <legend class="pad-top-4 font-bold">Colours</legend>
-                      <ul>
-                        <li><label><input type="radio" checked name="colour" value="r"> Red</label></li>
-                        <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                        <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
+                      <ul class="color-variant-fields pad-top-4">
+                        <li><input type="radio" checked name="colour" id="Red_3" value="Red"> <label for="Red_3">Red</label></li>
+                        <li><input type="radio" name="colour" id="White_3" value="White"> <label for="White_3">White</label></li>
+                        <li><input type="radio" name="colour" id="Blue_3" value="Blue"> <label for="Blue_3">Blue</label></li>
                       </ul>
                     </fieldset>
                     <fieldset>
                       <legend class="pad-top-4 font-bold">Select Size</legend>
-                      <article>
-                        <button class="border-box active-box">M</button>
-                        <button class="border-box">L</button>
-                        <button class="border-box">XL</button>
-                      </article>
+                      <ul class="size-fields pad-top-4">
+                        <li><input type="radio" checked name="size" id="Size_S_3" value="S"> <label for="Size_S_3">S</label></li>
+                        <li><input type="radio" name="size" id="Size_XL_3" value="XL"> <label for="Size_XL_3">XL</label></li>
+                        <li><input type="radio" name="size" id="Size_XXL_3" value="XXL"> <label for="Size_XXL_3">XXL</label></li>
+                      </ul>
                     </fieldset>
                   </form>
                   <footer class="product-footer">
@@ -316,19 +324,19 @@
                   <form>
                     <fieldset>
                       <legend class="pad-top-4 font-bold">Colours</legend>
-                      <ul>
-                        <li><label><input type="radio" checked name="colour" value="r"> Red</label></li>
-                        <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                        <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
+                      <ul class="color-variant-fields pad-top-4">
+                        <li><input type="radio" checked name="colour" id="Red_4" value="Red"> <label for="Red_4">Red</label></li>
+                        <li><input type="radio" name="colour" id="White_4" value="White"> <label for="White_4">White</label></li>
+                        <li><input type="radio" name="colour" id="Blue_4" value="Blue"> <label for="Blue_4">Blue</label></li>
                       </ul>
                     </fieldset>
                     <fieldset>
                       <legend class="pad-top-4 font-bold">Select Size</legend>
-                      <article>
-                        <button class="border-box active-box">M</button>
-                        <button class="border-box">L</button>
-                        <button class="border-box">XL</button>
-                      </article>
+                      <ul id="" class="size-fields pad-top-4">
+                        <li><input type="radio" checked name="size" id="Size_S_4" value="S"> <label for="Size_S_4">S</label></li>
+                        <li><input type="radio" name="size" id="Size_XL_4" value="XL"> <label for="Size_XL_4">XL</label></li>
+                        <li><input type="radio" name="size" id="Size_XXL_4" value="XXL"> <label for="Size_XXL_4">XXL</label></li>
+                      </ul>
                     </fieldset>
                   </form>
                   <footer class="product-footer">
@@ -336,7 +344,7 @@
                   </footer>
                 </article>
               </header>
-            </section>
+            </article>
 
             <nav aria-label="Pagination" class="pagination text-center">
               <p>Showing 4 of 11 products</p>

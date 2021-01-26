@@ -1,6 +1,8 @@
 :root {
 	--pad-and-gap: 0.4em;
+	--primary-color: rgb(255,0,0);
 	--secondary-color: #000000;
+	--color-white: #ffffff;
 }
 
 *, *::before, *::after {
@@ -111,17 +113,13 @@ legend.legend {
 }
 
 .color-red {
-	color: red;
+	color: var(--primary-color);
 }
 
 .btn-red {
-	background-color: red;
-	color: white;
-	border: 0.3em solid red;
-}
-
-.subheading {
-
+	background-color: var(--primary-color);
+	color: var(--color-white);
+	border: 0.3em solid var(--primary-color);
 }
 
 .grid {
@@ -172,7 +170,7 @@ legend.legend {
 }
 
 .navigation {
-	background-color: #ffffff;
+	background-color: var(--color-white);
     z-index: 2;
     position: relative;
     padding: var(--pad-and-gap) 0;
@@ -198,5 +196,5 @@ legend.legend {
 }
 
 .fa-star, .fa-star-half-alt {
-	color: red;
+	color: var(--primary-color);
 }
