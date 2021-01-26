@@ -271,11 +271,11 @@ del {
 }
 
 .radio-group label+input[type=radio]+label {
-  border-left: solid 3px #d8d8d8;
+  border-left: solid 3px var(--dark-grey-color);
 }
 
 .radio-group {
-  border: solid 3px #d8d8d8;
+  border: solid 3px var(--dark-grey-color);
   display: inline-block;
   border-radius: 10px;
   overflow: hidden;
@@ -304,7 +304,7 @@ ul.ks-cboxtags li {
 ul.ks-cboxtags li label {
   display: inline-block;
   background-color: rgba(255, 255, 255, .9);
-  border: 2px solid #d8d8d8;
+  border: 2px solid var(--dark-grey-color);
   color: var(--secondary-color);
   border-radius: 25px;
   white-space: nowrap;
@@ -346,7 +346,7 @@ ul.ks-cboxtags li input[type="checkbox"]:checked+label::before {
 ul.ks-cboxtags li input[type="checkbox"]:checked+label {
   border: 2px solid var(--secondary-color);
   background-color: var(--secondary-color);
-  color: #fff;
+  color: var(--color-white);
   transition: all .2s;
 }
 
@@ -364,8 +364,8 @@ ul.ks-cboxtags li input[type="checkbox"]:focus+label {
 }
 
 .disabled-page {
-  background-color: #d2d2d2;
-  border: 0.11em solid #d2d2d2 !important;
+  background-color: var(--silver-color);
+  border: 0.11em solid var(--silver-color) !important;
 }
 
 .disabled-page a {

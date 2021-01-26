@@ -3,6 +3,10 @@
 	--primary-color: rgb(255,0,0);
 	--secondary-color: #000000;
 	--color-white: #ffffff;
+	--primary-font: 'Poppins', sans-serif;
+	--grey-color: #c2c2c2;
+	--dark-grey-color: #d8d8d8;
+	--silver-color: #d2d2d2;
 }
 
 *, *::before, *::after {
@@ -12,7 +16,7 @@
 }
 
 html {
-	font-family: 'Poppins', sans-serif;
+	font-family: var(--primary-font);
 }
 
 body {
@@ -174,7 +178,7 @@ legend.legend {
     z-index: 2;
     position: relative;
     padding: var(--pad-and-gap) 0;
-    border: 0.1em solid #c2c2c2;
+    border: 0.1em solid var(--grey-color);
     margin-top: 0.3em;
 }
 
